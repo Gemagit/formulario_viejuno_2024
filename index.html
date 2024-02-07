@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/assets/anciano.png">
+    <title>Formulario viejuner</title>
+</head>
+<body>
+    
+    <form class="viejuners" action="tu" id="tu">
+        <h1>Club Viejuner</h1>
+
+        <fieldset>
+            <legend><h4>Tu:</h4></legend>
+          
+          <label for="nombre">Nombre:</label>
+          <input 
+           type="text"
+           id="fname" 
+           name="fname" 
+           placeholder="Introduce nombre..." 
+           required><br><br>
+        
+          
+          <label for="lname">Edad</label>
+          <input 
+           type="text" 
+           id="lname" 
+           name="lname" 
+           placeholder="Introduce apellidos..." 
+           minlength="3"
+           maxlenght="30" required><br><br>
+        
+        
+          <label for="edad">Edad:</label>
+          <input 
+           type="number" 
+           id="edad" 
+           name="edad" 
+           placeholder="Introduce tu edad" required>
+          <br><br>
+       
+          <label for="masculino">Sexo Masculino:</label>
+          <input 
+           type="radio" 
+           id="hombre" 
+           name="genero" 
+           value="masculino">
+  
+          <label for="femenino">Sexo Femenino:</label>
+          <input 
+           type="radio" 
+           id="femenino" 
+           name="genero" 
+           value="femenino">
+           <br><br>
+       
+  
+          <label for="sentir">¿Me siento viejuner?</label><br>
+          <input 
+           type="checkbox" 
+           name="bien" 
+           value="gusta">YES<br>
+        
+          <input 
+           type="checkbox" 
+           name="mal" 
+           value="no gusta">NO<br><br>
+        
+          
+          <textarea for="message" 
+           type="texto"
+           placeholder="Introduce a message" 
+           class="message">Escribe algo sobre ti</textarea><br>
+        <br><br>
+    </fieldset>
+    
+  
+       <fieldset>
+        <legend><h4>Tus circunstancias:</h4></legend>
+          
+          <label for="correo">Correo electrónico</label><br>
+          <input 
+            type="text" 
+            id="correo" 
+            name="correo" 
+            placeholder="Introduce correo..." minlength="3"
+            maxlenght="30" required><br><br>
+          
+  
+          
+          <label for="tlf">Teléfono</label><br>
+          <input 
+            type="number" 
+            id="tlf" 
+            name="tlf" 
+            placeholder="Introduce telefono..."
+            minlength="3"
+            maxlenght="10" required><br> <br>
+        
+        </fieldset>
+        <input type="submit" value="Enviar">
+        
+    </form>
+
+
+       <form class="ladrones" id="Losladronzuelosdebicicletas">
+        <h1>Los ladronzuelos de bicicletas</h1>
+        <br>
+        
+          <label for="dia">Día:</label>
+          <input 
+            type="date" 
+            id="fecha" 
+            name="fecha" 
+            placeholder="Introduce fecha" minlength="3"
+            maxlenght="30" required><br>
+
+        
+          <label for="tiempo">Hora:</label>
+          <input 
+           type="time" 
+           id="tiempo" 
+           name="tiempo" 
+           pattern="tiempo" 
+           placeholder="Introduce Hora" required><br>
+        
+  
+        
+          <label for="precio">Rango de precio:</label>
+          <input 
+           type="range" 
+           id="precio" 
+           name="precio" 
+           pattern="precio" 
+           placeholder="Introduce precio" required><br>
+       
+
+          <label for="color">Color:</label>
+          <input 
+           type="precio" 
+           id="precio" 
+           name="precio" 
+           pattern="precio" 
+           placeholder="Introduce color" required><br>
+  
+
+          <label for="tipo">Tipo de bicicleta:</label>
+            <select>
+              <optgroup label="Paseo">
+                <option>Señorial</option>
+                <option>Anti-plebeyos</option>
+                <option>PorEncimaDelHombro</option>
+              </optgroup>
+
+              <optgroup label="Montaña">
+                <option>Gamusinos</option>
+                <option>Hueleflores</option>
+                <option>Fango lover</option>
+              </optgroup>
+
+              <optgroup label="Carreras">
+                <option>Metroymedio</option>
+                <option>3 de la tarde.Fluorescente edition</option>
+                <option>Grupitors</option>
+              </optgroup>
+            </select>
+            <br>
+          
+        
+      
+         <label for="accesorios">Accesorios:</label>
+           <select name="accesorios" size="4" multiple>
+            <option>Ruedines</option>
+            <option>Pegatinas</option>
+            <option>Cestita</option>
+            <option>Bomba de aire</option>
+            <option>Timbre</option>
+            <option>Foco</option>
+          </select>
+          <br>
+          
+  
+        <label for="marca">¿Qué marca era?</label>
+          <select name="marca" >
+            <option>Specialized</option>
+            <option>Trek</option>
+            <option>Merida</option>
+            <option>Scott</option>
+            <option>Giant</option>
+            <option>Cube</option>
+            <option>Lapierre</option>
+            <option>Orbea</option>
+            <option>Canondale</option>
+            <option>Bmc</option>
+            <option>Canyon</option>
+            <option>Look</option>
+            <option>Protek</option>
+            <option>Megamo</option>
+            <option>Pinarello</option>
+            <option>Bianchi</option>
+            <option>Bh</option>
+            <option>Factor</option>
+            <option>Ghost</option>
+            <option>Cervelo</option>
+            <option>Argon</option>
+          </select>
+          <br>
+
+          <input type="submit" value="Enviar" />
+  
+       </form>
+    
+</body>
+</html>
